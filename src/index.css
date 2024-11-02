@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #dfecfa;
+  --white: #ffffff;
+}
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Responsive font-size */
+html {
+  font-size: 16px;
+}
+
+/* Container */
+/* .container {
+  width: 100% !important;
+} */
+.containerr {
+  width: 100% !important;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin: 0 auto;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+button:focus {
+  outline: none;
+  border: none;
+}
+
+/* Font-family */
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.tabs-container {
+  width: 100%; /* Konteyner to'liq kenglikni egallaydi */
+}
+
+.ant-tabs-nav {
+  width: 100%;
+}
+
+.ant-tabs-tab {
+  flex-grow: 1; /* Har bir tab kengligini teng qiladi */
+  text-align: center; /* Tab textini markazda joylaydi */
+  font-size: 16px; /* Matn kattaligi */
+}
+
+.ant-tabs-nav .ant-tabs-nav-wrap {
+  flex: none !important;
+  justify-content: space-between;
+}
+
+
+/* table style */
+#department-tab .ant-table-thead > tr > th {
+  text-align: center; 
+  color: rgba(30, 30, 30, 0.7) !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#department-tab .ant-table-tbody > tr > td {
+  text-align: center; 
+  font-weight: 600;
+  color: rgba(10, 10, 10, 1);
+  font-weight: 500;
+  padding-top: 20px !important;
+  font-size: 18.5px;
+  padding-bottom: 20px !important;
+}
+
+.ant-table-thead > tr > th {
+  text-align: center; /* Sarlavhalarni markazda joylash */
+  color: rgba(30, 30, 30, 0.7) !important;
+}
+
+.ant-table-tbody > tr > td {
+  text-align: left; /* Jadval ichidagi matnni markazlash */
+  font-weight: 600;
+  color: rgba(10, 10, 10, 1);
+  font-weight: 500;
+}
+
+.ant-table-tbody > tr > td:nth-child(1),
+.ant-table-tbody > tr > td:nth-child(4),
+.ant-table-tbody > tr > td:nth-child(5),
+.ant-table-tbody > tr > td:nth-child(6) {
+  text-align: center; /* Ma'lum ustunlarni markazlash */
+}
+
+
+
+.dashboard__statistics-card p {
+  width: calc(100% - 4.75rem);
+}
+/* Ant design */
+/* Select element preventing own background and border */
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+  border: none !important;
+  background-color: inherit !important;
+}
+/* Select element preventing own shadowing */
+.ant-select-focused:where(
+    .css-dev-only-do-not-override-1gwfwyx
+  ).ant-select-outlined:not(.ant-select-disabled):not(
+    .ant-select-customize-input
+  ):not(.ant-pagination-size-changer)
+  .ant-select-selector {
+  box-shadow: none;
+}
+/* Select option changing active background-color */
+:where(.css-dev-only-do-not-override-1gwfwyx).ant-select-dropdown
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  background-color: rgb(242, 242, 242) !important;
+}
+:where(.css-dev-only-do-not-override-1gwfwyx).ant-select-single
+  .ant-select-selector {
+  color: #1e1e1eb2 !important;
+  font-size: 1rem !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 600 !important;
+}
+:where(.css-dev-only-do-not-override-1gwfwyx).ant-select
+  .ant-select-selection-item {
+  font-weight: 600 !important;
+}
+:where(.css-dev-only-do-not-override-1gwfwyx).ant-select .ant-select-arrow {
+  color: #1e1e1eb2 !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem;
+}
+.header_search {
+  width: calc(100% - 1.125rem);
+}
+
+.parent-focus:focus-within *:not(.header_search) {
+  filter: blur(5px);
+  transition: filter 300ms ease;
+  z-index: 0;
+}
+.header_search {
+  filter: none !important;
+  z-index: 1 !important;
+  position: relative !important;
+}
+.parent-focus:focus-within .header_search {
+  filter: none !important;
+  z-index: 2 !important;
+  position: relative !important;
+}
+.header_search:focus {
+  filter: none !important;
+  z-index: 2;
+  position: relative;
+}
+
+/* highcharts pie credit link */
+.highcharts-credits {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  html {
+    font-size: 10px;
+  }
+}
