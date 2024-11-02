@@ -83,7 +83,7 @@ const TuitBranches = () => {
               ),
             },
             {
-              title: "Talabalar turar joylari",
+              title: "HUDUDIY O'QUV MUASSASALAR BO'LIMI",
             },
           ]}
         />
