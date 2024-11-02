@@ -52,7 +52,7 @@ const data = {
       id: 3,
       iconSrc: residenceSrc,
       info: "Talabalar yashash joyi",
-      numbers: "4379",
+      numbers: "2421",
       colorBold: "#D4BC20",
       colorLight: "#FBF8E9",
       link: "",
