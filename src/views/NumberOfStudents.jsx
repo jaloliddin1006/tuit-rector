@@ -40,7 +40,7 @@ const data = {
       id: "3",
       link: "",
       title: "SIRTQI TALABALAR SONI",
-      studentsNumber: 5032,
+      studentsNumber: 5332,
       allStudents: 14676,
       backgroundColor: "#EBFAEF",
       textColor: "#00BA34",

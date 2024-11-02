@@ -34,7 +34,7 @@ const StudentsCountryChart = () => {
         data: [
           {
             name: "Xorijiy talabalar",
-            y: 408, // Replace with actual value
+            y: 75, // Replace with actual value
             color: "#007bff", // Blue color for foreign students
           },
           {
